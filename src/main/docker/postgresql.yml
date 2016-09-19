@@ -1,0 +1,12 @@
+version: '2'
+services:
+    crti-postgresql:
+        container_name: crti-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/crti/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=crti
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
